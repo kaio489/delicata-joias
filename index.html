@@ -393,7 +393,7 @@ loadProducts();
    Demo is an explicit, ephemeral preview. It never writes to the connected store. */
 (() => {
 'use strict';
-const CONFIG={enabled:false,endpoint:'https://uuzdbfizpozdacygnzkj.supabase.co/functions/v1/delicata-store'};
+const CONFIG={enabled:true,endpoint:'https://uuzdbfizpozdacygnzkj.supabase.co/functions/v1/delicata-store'};
 const D={token:'',demo:false,data:null,tab:'overview',period:'month',from:'',to:'',query:'',status:'Todos',busy:false};
 const e=escapeHtml,m=c=>formatMoney((c||0)/100),nowDate=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 let config={shipping:1499,pickup:false,low_stock:3},checkout={step:1,customer:{mode:'delivery'},id:'',result:null,items:[]};
